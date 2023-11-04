@@ -1,0 +1,4 @@
+# Ignore the followings:
+
+node_modules
+dist/**/*js.map
