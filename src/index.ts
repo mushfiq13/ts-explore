@@ -1,1 +1,3 @@
-console.log("Hello, World!");
+import { message } from "./app/Main";
+
+console.log(message);
