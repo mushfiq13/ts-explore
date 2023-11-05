@@ -1,11 +1,27 @@
 {
   "compilerOptions": {
+    // Target ES6 syntax
+    "target": "es6",
+    // Specify the output format of JavaScript output
     "module": "es6",
-    "noImplicitAny": true,
-    "removeComments": true,
+    // Enable strict type checking
+    "strict": true,
+    // Use Node-style module resolution
+    "moduleResolution": "node",
+    // Output the compiled JavaScript files to the dist/js directory
+    "outDir": "./dist/js",
+    // Creates a source map used for easier debugging
     "sourceMap": true,
-    "outDir": "./dist/js"
+    // Restricts developers from using “any” type
+    "noImplicitAny": true,
+    // Removes comments from generated code
+    "removeComments": true
   },
+  // Defines which files should be compiled
   "include": ["src/**/*"],
-  "exclude": ["node_modules"]
+  // Ignore specific file
+  "exclude": ["node_modules"],
+  "watchOptions": {
+    "excludeFiles": ["src/index.ts"]
+  }
 }

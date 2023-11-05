@@ -1,4 +1,4 @@
 # Ignore the followings:
 
-node_modules
+/node_modules/
 dist/**/*js.map
